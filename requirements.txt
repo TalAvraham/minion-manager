@@ -1,0 +1,10 @@
+pywin32
+Pillow
+python-telegram-bot
+pyautogui
+pynput
+colorlog
+retrying
+watchdog
+PyGithub
+tailer
