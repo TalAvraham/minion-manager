@@ -49,7 +49,7 @@ class Minecraft(metaclass=Singleton):
 
     def press_escape(self):
         logging.info("Pressing ESC in game.")
-        self._hit_keyboard_button('t')
+        self._hit_keyboard_button(pynput.keyboard.Key.esc)
 
     def send_chat_message(self, message):
         logging.info(f"Sending chat message: '{message}'.")
