@@ -83,7 +83,7 @@ class Command(ABC):
     """A base class for bot commands."""
     @abstractmethod
     def run(self, update, context):
-        return NotImplementedError
+        raise NotImplementedError
 
     @staticmethod
     def _reply(update, context, msg):
@@ -104,7 +104,7 @@ class MinecraftCommand(Command):
 
     @abstractmethod
     def run(self, update, context):
-        return NotImplementedError
+        raise NotImplementedError
 
 
 class MonitorCommand(Command):
@@ -114,7 +114,7 @@ class MonitorCommand(Command):
 
     @abstractmethod
     def run(self, update, context):
-        return NotImplementedError
+        raise NotImplementedError
 
 
 class UpdateCommand(Command):
@@ -125,7 +125,7 @@ class UpdateCommand(Command):
 
     @abstractmethod
     def run(self, update, context):
-        return NotImplementedError
+        raise NotImplementedError
 
 
 # === Commands === #
